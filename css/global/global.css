@@ -5,7 +5,16 @@
   padding-inline: 1em;
 }
 
+.hero-page.container {
+  padding-bottom: 0;
+}
+
+.list.container {
+  padding-top: 0;
+}
+
 .botao {
+  display: inline-block;
   border: 1px solid #fff;
   padding: 1em 2em;
   border-radius: 4px;
@@ -15,4 +24,26 @@
 .botao:hover {
   color: #fe6a0f;
   border-color: currentColor;
+}
+
+.hero-page .botao {
+  background: #fe6a0f;
+  color: #000;
+  border: none;
+}
+
+.hero-page .botao:hover {
+  background: #fe7927;
+}
+
+@media (max-width: 820px) {
+  .container {
+    padding-block: 2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding-block: 2em;
+  }
 }
