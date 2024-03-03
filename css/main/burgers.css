@@ -33,6 +33,10 @@
   left: 32px;
 }
 
+.burger-item:hover {
+  background: #000;
+}
+
 .burger-item > * {
   margin-top: 0.5em;
 }
