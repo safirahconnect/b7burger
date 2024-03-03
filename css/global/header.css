@@ -17,6 +17,7 @@
   flex: 1;
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   font-size: 1.125rem;
 }
@@ -50,16 +51,37 @@
 @media (max-width: 820px) {
   .header {
     justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .header-nav {
-    display: none;
   }
 
   .header-mobile-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-nav.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+    width: 100%;
+    height: calc(100vh - 110px);
+    text-align: center;
+  }
+
+  .header-nav.active .header-menu {
+    flex-direction: column;
+  }
+
+  .header a {
+    font-size: 1.5rem;
   }
 }
