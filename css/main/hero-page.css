@@ -21,6 +21,10 @@
   margin-bottom: 2.8em;
 }
 
+.hero-pic img {
+  max-height: 600px;
+}
+
 @media (max-width: 1000px) {
   .hero-info h1 {
     font-size: 3rem;
