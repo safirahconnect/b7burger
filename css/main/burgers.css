@@ -1,0 +1,64 @@
+.burgers-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.burger-item {
+  padding: 2em;
+  background-image: linear-gradient(to bottom, #2b2b2b 50%, #1f1f1f 50%);
+  display: grid;
+  justify-items: center;
+  border-radius: 4px;
+}
+
+.burger-item:first-child {
+  position: relative;
+}
+
+.burger-item:first-child::before {
+  content: "Promoção";
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 40px;
+  background: #fe6a0f;
+  color: #000;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 4px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.burger-item > * {
+  margin-top: 0.5em;
+}
+
+.burger-item p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.burger-item h2 {
+  font-family: "Calistoga", "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.burger-item span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fe6a0f;
+}
+
+@media (max-width: 840px) {
+  .burger-item p {
+    font-size: 1rem;
+  }
+  .burger-item h2 {
+    font-size: 1.5rem;
+  }
+}
